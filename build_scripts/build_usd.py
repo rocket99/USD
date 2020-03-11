@@ -365,8 +365,8 @@ def DownloadURL(url, context, force, dontExtract = None):
     with CurrentWorkingDirectory(context.srcDir):
         # Extract filename from URL and see if file already exists. 
         filename = url.split("/")[-1]       
-        if force and os.path.exists(filename):
-            os.remove(filename)
+        #if force and os.path.exists(filename):
+        #    os.remove(filename)
 
         if os.path.exists(filename):
             PrintInfo("{0} already exists, skipping download"
